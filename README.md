@@ -5,8 +5,8 @@ It pulls the current values of a transfiguration gems to give you the current me
 This will help you choose what color gem to use when running the labyrinth for profit.
 
 ***Installation***
-1. Copy the contents of the dist folder to desired directory
-2. Run transfigStats.exe in command line
+1. Unzip transfigStats.zip into desired directory.
+2. Run transfigStats.exe in command line.
 
 ***Usage***
 
