@@ -89,12 +89,12 @@ def printStats(stats, transfigValueList, gemValueList, color, cheapestRegGem):
     print('\n\n--------------{} GEMS----------------'.format(color))
     print('{} gems: mean of profit: {}, median of profit: {}, normal standard deviation of gem values: {}'.format(color, stats[0] - cheapestRegGem[1], stats[1] - cheapestRegGem[1], stats[2]))
     
-    print('\nTop 10 {} transfiguration gems'.format(color))
+    print('\nTop {} {} transfiguration gems'.format(args.topGemListSize, color))
     sortedByValue = list(dict(sorted(transfigValueList.items(), key=lambda item: item[1], reverse=True)).items())
     for i in range(0,args.topGemListSize):
         print('\t{}. {}: {}'.format(i + 1, sortedByValue[i][0], sortedByValue[i][1]))
 
-    print('\nTop 10 cheapest {} gems'.format(color))
+    print('\nTop {} cheapest {} gems'.format(args.cheapestGemListSize, color))
     sortedByValue = list(dict(sorted(gemValueList.items(), key=lambda item: item[1])).items())
     for i in range(0,args.cheapestGemListSize):
         print('\t{}. {}: {}'.format(i + 1, sortedByValue[i][0], sortedByValue[i][1]))
